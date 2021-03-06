@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04D8BB</color>
+    <color name="colorPrimaryDark">#00BFA5</color>
+    <color name="colorAccent">#FFDE03</color>
+    <color name="yellow">#FFC107</color>
+    <color name="cardColor">#004D40</color>
+    <color name="yellowBg">#FFDE03</color>
+    <color name="startGColor">#3a1c71</color>
+    <color name="centerGColor">#d76d77</color>
+    <color name="endGColor">#ffaf7b</color>
+    <color name="startGColo">#0091EA</color>
+    <color name="green">#64DD17</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="offBlack">#999999</color>
+    <color name="black">#FF000000</color>
+</resources>

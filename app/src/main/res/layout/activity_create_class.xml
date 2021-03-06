@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffaf7b"
+    android:padding="7dp"
+    tools:context=".CreateClassActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:cardBackgroundColor="#00BFA5"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:id="@+id/editL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/editsubName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="subject name (*required field)"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editsubCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="subject code"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/editInstructorName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="instructor name1 (*required field)"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:visibility="visible" />
+
+
+                    <EditText
+                        android:id="@+id/editInstructorName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="instructor name2"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp" />
+
+
+                <EditText
+                    android:id="@+id/editLink1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="conference link for instructor1"
+                    android:textColor="#6200EA"
+                    android:padding="4dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editLink2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="conference link for instructor2"
+                    android:textColor="#6200EA"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/removeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_baseline_remove_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/dayCardView"
+        />
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        app:layout_constraintEnd_toStartOf="@+id/removeImage"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/dayCardView"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dayCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="4dp"
+        app:cardBackgroundColor="#00BFA5"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:id="@+id/dayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Monday"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Tue"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day3"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Wed"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day4"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Thu"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day5"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Fri"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day6"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editDay6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:text="Sat"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible" />-->
+
+                <TextView
+                    android:id="@+id/editDate6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Day* (select a nearest date)"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/editTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="time*"
+                    android:maxLines="1"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/editProgressBarCard"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/editSaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/editProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/editSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="#EF407B"
+        android:text="@string/save"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/doneButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="#EF407B"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editSaveButton"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

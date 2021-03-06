@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13990201226",
+    "firebase_url": "https://classy-de12b.firebaseio.com",
+    "project_id": "classy-de12b",
+    "storage_bucket": "classy-de12b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13990201226:android:4f99170b0e7ee4b0efaa73",
+        "android_client_info": {
+          "package_name": "com.zakir.classy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13990201226-fg5d40qsvm1daiv2aub1tprfsoof91qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5FgUq-PQxSk7E4TKa8uy8LSCvo6xAUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13990201226-fg5d40qsvm1daiv2aub1tprfsoof91qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

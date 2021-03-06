@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Classy</string>
+    <string name="get_started">Get Started</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="no_account_yet_create_one">No Account Yet? Create One</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="signup">signUp</string>
+    <string name="create">Create</string>
+    <string name="signout">SignOut</string>
+    <string name="upcomingClass">Upcoming Classes</string>
+    <string name="thursday">Thursday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="save">Save</string>
+    <string name="join">Join</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_people">People</string>
+    <string name="menu_routine">Routine</string>
+</resources>
