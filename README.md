@@ -9,5 +9,5 @@
 - Admin can make anyone 'admin' or remove from admin
 - See your time time table.
 ### How to use
-> Just install the app, create class, get the classId, enter it in join section and you are good to go.
+> Just install the app from [here](https://docs.google.com/uc?export=download&id=1PedDiz8UfhuqahAXHl_9THvBB9FSN4_T), create class, get the classId, enter it in join section and you are good to go.
 Watch demo video [here](https://drive.google.com/file/d/1TT0CfVHG9yNMHhNaBJKRoD3O413C5TrQ/view?usp=drivesdk)
